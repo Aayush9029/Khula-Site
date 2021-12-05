@@ -27,6 +27,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = Blocs
 -------------------------------------------------------------- */
 
+
 .bloc{
 	width:100%;
 	clear:both;
@@ -315,21 +316,46 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .feat-header{
 	font-weight:bold;
 }
-.app-hero-img{
-	box-shadow:-6px -36px 32px rgba(0,0,0,0.09);
-	border-radius:10px 10px 0px 0px;
+
+h1{
+
+	font-size: 48px;
+	background: linear-gradient(45deg, #f700ff 0%, #6200ff 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 1000;
 }
+
+h3{
+
+	background: linear-gradient(45deg, #ea00ff 0%, #6200ff 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 1000;
+}
+
 .app-hero-title{
 	font-size:60px;
-	color:#761FFF!important;
+	/* Gradient */
+	background: linear-gradient(90deg, #ff00ff 0%, #0f00da 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
 .app-hero-sub-title{
 	font-size:30px;
+	/* Gradient */
+	background: linear-gradient(90deg, #ffffff 0%, #7100da 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	
 }
 .black-top-white-down{
 	background:linear-gradient(0deg, #000917 0%, #000000 100%);
 	border-color:transparent!important;
-	border-style:_popUpItemAction:;
 }
 .navbar-brand img{
 	height:100px;
@@ -377,25 +403,54 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	background:linear-gradient(90deg, #FE26FF 0%, #5800D3 84%);
 	margin:25px 25px 25px 25px;
 }
+.last-download-button:hover{
+	background:linear-gradient(0deg, #FE26FF 0%, #9549ff 84%);
+}
 .btn-style{
 	font-weight:bold;
 	border-radius:39px 39px 39px 39px;
+	outline: none;
+	border:none;
+	transition: 0.3s ease-in-out;
 }
 .download-ios-app-button{
-	background:linear-gradient(90deg, #00B1FF 0%, #0052FE 100%);
+	background:linear-gradient(180deg, #00B1FF 0%, #0052FE 100%);
+	margin:25px;
+
 }
 .macos-app-download-btn{
-	background:linear-gradient(90deg, #2B2B2B 0%, #1B1B1B 100%);
-	margin-left:25px;
+	background:linear-gradient(180deg, #2B2B2B 0%, #1B1B1B 100%);
+	margin:25px;
 }
+
 .youtubedemo-btn{
-	background:linear-gradient(0deg, #FF0000 0%, #FF0000 100%);
-	margin:0px 0px 0px 0px;
+	background:linear-gradient(180deg, #FF0000 0%, #FF0000 100%);
+	margin:25px;
 }
+
 .support-btn{
-	background:linear-gradient(90deg, #008A12 0%, #1C4E00 100%);
+	background:linear-gradient(180deg, #008A12 0%, #1C4E00 100%);
 	margin:25px 25px 25px 25px;
 }
+
+.youtubedemo-btn:hover{
+	background:linear-gradient(90deg, #ff6139 0%, #ff2323 100%);
+	margin:25px;
+}
+
+.download-ios-app-button:hover{
+	background:linear-gradient(90deg, #00B1FF 0%, #5a8eff 100%);
+	margin:25px;
+}
+.support-btn:hover{
+	background:linear-gradient(90deg, #008A12 0%, #276900 100%);
+}
+
+.macos-app-download-btn:hover{
+	background:linear-gradient(90deg, #1B1B1B 0%, #525252 100%);
+}
+
+
 .img-main---pad-p-style{
 	box-shadow:0px 0px 29px #2F2687;
 	border-style:solid;
@@ -404,6 +459,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .call-to-action-download-btn{
 	background:linear-gradient(90deg, #E975F3 0%, #7405FF 81%);
+}
+.call-to-action-download-btn:hover{
+	background:linear-gradient(0deg, #E975F3 0%, #9f50ff 81%);
 }
 .ios-heading-gradient{
 	font-weight:900;
