@@ -8,7 +8,8 @@
 body{
 	margin:0;
 	padding:0;
-    background:#FFFFFF;
+    background:#141419;
+	color: white !important;
     overflow-x:hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -115,6 +116,14 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
+h1{
+	background: linear-gradient(45deg, #ea00ff 0%, #6200ff 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 1000;
+	font-size: 3em;
+}
 
 .mg-md{
 	margin-top:10px;
@@ -200,7 +209,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	max-width:1140px;
 }
 .dark-bg{
-	background:linear-gradient(0deg, #000000 0%, #000000 100%);
+    background:#141419;
 }
 
 /* = Colour
