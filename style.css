@@ -471,6 +471,16 @@ button {
 /* = Custom Styling
 -------------------------------------------------------------- */
 
+.threed-machelper-bg {
+    background: url(./img/kenobi-helper-banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    height: 620px;
+}
+
 .privacy-policy-text {
     color: rgb(215, 179, 245) !important;
 }
