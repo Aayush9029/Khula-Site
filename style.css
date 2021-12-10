@@ -1,14 +1,8 @@
-/*-----------------------------------------------------------------------------------
-	Khula
-	About: Khula app landing page.
-	Author: Aayush Pokharel
-	Version: 1.0
-	Built with Blocs
------------------------------------------------------------------------------------*/
+
 body{
 	margin:0;
 	padding:0;
-    background:#141419;
+    background:#FFFFFF;
     overflow-x:hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -20,13 +14,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Preloader */
 
-.page-preloader{position: fixed;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;animation-name: preloader-fade;animation-delay: 2s;animation-duration: 0.5s;animation-fill-mode: both;}
+.page-preloader{position: fixed;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;animation-name: preloader-fade;animation-delay: 1s;animation-duration: 0.5s;animation-fill-mode: both;}
 .preloader-complete{animation-delay:0.1s;}
 @keyframes preloader-fade {0% {opacity: 1;visibility: visible;}100% {opacity: 0;visibility: hidden;}}
 
 /* = Blocs
 -------------------------------------------------------------- */
-
 
 .bloc{
 	width:100%;
@@ -187,6 +180,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = NavBar
 -------------------------------------------------------------- */
 
+.navbar-dark .nav .dropdown-menu .nav-link{
+	color: rgb(64, 64, 64);
+}
 /* Handle Multi Level Navigation */
 .dropdown-menu .dropdown-menu{
 	border:none}
@@ -222,6 +218,18 @@ a:hover{text-decoration: none; cursor:pointer;}
 	margin-top:10px;
 	margin-bottom:20px;
 }
+img.mg-sm,img.mg-md,img.mg-lg{
+	margin-top: 0;
+}
+img.mg-sm{
+	margin-bottom:10px;
+}
+img.mg-md{
+	margin-bottom:30px;
+}
+img.mg-lg{
+	margin-bottom:50px;
+}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -236,10 +244,6 @@ button{
 	outline: none!important;
 }
 
-.btn-xl{
-	padding: 16px 40px;
-	font-size: 28px;
-}
 .a-block{
 	width:100%;
 	text-align:left;
@@ -277,6 +281,14 @@ button{
 
 
 
+.carousel-nav-icon{
+	fill: none;
+	stroke: #fff;
+	stroke-width: 2px;
+	fill-rule: evenodd;
+	stroke-linecap:round;
+}
+
 
 /* ScrollToTop button */
 
@@ -306,23 +318,14 @@ button{
 
 /* = Custom Styling
 -------------------------------------------------------------- */
-.padding-overall{
-	margin-left: 40px !important;
-}
-h1,h2,h3,h4,h5,h6,p,label,.btn,a{
-	font-family:"Helvetica";
-}
-.container{
-	max-width:1140px;
-}
-.feat-header{
-	font-weight:bold;
+.black-bg{
+	background-color: #00060F;
 }
 
 h1{
 
 	font-size: 48px;
-	background: linear-gradient(45deg, #f700ff 0%, #6200ff 100%);
+	background: linear-gradient(90deg, #4e41ff 0%, #5900ff 100%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -337,171 +340,238 @@ h3{
 	font-weight: 1000;
 }
 
+.btn-1-style{
+	background-color:transparent;
+	border:none;
+	background: linear-gradient(90deg, #00b7ff 0%, #0051ff 100%);
+	font-weight:bold;
+	margin:25px 25px 25px 0px;
+	border-radius:25px 25px 25px 25px;
+}
+
+.btn-style{
+	border:none;
+	background: linear-gradient(90deg, #ff0000 0%, #ff0000 100%);
+	margin:25px 25px 25px 0px;
+	border-radius:25px 25px 25px 25px;
+	font-weight:bold;
+	border-radius:25px;
+	box-shadow: 0px 0px 20px rgb(249, 86, 255) !important;
+}
+.btn-2-style{
+	border:none;
+	background: linear-gradient(90deg, #2c2c2c 0%, #1b1b1b 100%);
+	font-weight:bold;
+	margin:25px 25px 25px 0px;
+	border-radius:25px 25px 25px 25px;
+}
+.btn-3-style{
+	border:none;
+	background: linear-gradient(90deg, #008d13 0%, #1c4d00 100%);
+	font-weight:bold;
+	margin:25px 25px 25px 0px;
+	border-radius:25px 25px 25px 25px;
+}
+.btn-4-style{
+	border:none;
+	background: linear-gradient(90deg, #e0001a 0%, #ce0707 100%);
+	font-weight:bold;
+	margin:25px 25px 25px 0px;
+	border-radius:25px 25px 25px 25px;
+}
+
+.big-download-button{
+	padding: 10px 50px;
+	font-size: 26px;
+}
+
+.btn-style:hover{
+	background:linear-gradient(0deg, #dc4eff 0%, #eb3bf1 100%);
+	box-shadow: 0px 0px 0px rgb(249, 86, 255) !important;
+
+	
+}
+.btn-2-style:hover{
+	background:linear-gradient(0deg, #3C3B3B  0%, #6e656c 98%);
+}
+.btn-1-style:hover{
+	background:linear-gradient(0deg, #4FB1FE 0%, #72c4ff 100%);
+}
+.btn-3-style:hover{
+	background: linear-gradient(90deg, #00bd19 0%, #307e03 100%);
+}
+.btn-4-style:hover{
+	background: linear-gradient(90deg, #e0001a 0%, #ff2a2a 100%);
+}
+
+
+.h1-style{
+	font-size: 72px;
+	background: linear-gradient(90deg, #c916ff 0%, #1100ff 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 1000;
+}
+.h2-style{
+	font-size: 48px;
+	background: linear-gradient(45deg, #ae00ff 0%, #6200ff 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 1000;
+}
+
+.h3-3-style{
+	background: linear-gradient(45deg, #9900ff 0%, #d400ff 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: bold;
+
+}
+
+.h4-style{
+	color: rgba(217, 193, 255, 0.932);
+	font-weight: 550;
+
+}
+
+
+
+h1,h2,h3,h4,h5,h6,p,label,.btn,a{
+	font-family:"Helvetica";
+}
+.container{
+	max-width:1140px;
+}
+.feat-header{
+	font-weight:bold;
+}
+.app-hero-img{
+	box-shadow:-6px -36px 32px rgba(0,0,0,0.09);
+	border-radius:10px 10px 0px 0px;
+}
 .app-hero-title{
 	font-size:60px;
 	/* Gradient */
-	background: linear-gradient(90deg, #ff00ff 0%, #0f00da 100%);
+	background: linear-gradient(90deg, #ff53ff 0%, #1900ff 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
+
 .app-hero-sub-title{
-	font-size:30px;
 	/* Gradient */
-	background: linear-gradient(90deg, #ffffff 0%, #7100da 100%);
+	background: linear-gradient(90deg, #ad33ff 0%, #ae57ff 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	
+	background-clip: text;	
 }
-.black-top-white-down{
-	background:linear-gradient(0deg, #000917 0%, #000000 100%);
-	border-color:transparent!important;
+
+.purple-gradient-bg-vert{
+	background:linear-gradient(0deg, #0C061E 0%, #000000    47%, #000000    100%);
 }
 .navbar-brand img{
-	height:100px;
-	width:100px;
+	height:60px;
 }
 .app-offset-bottom{
 	position:relative;
 	bottom:-20px;
 }
-.feat-card-icon{
-	width:50px;
-	background:linear-gradient(0deg, #9809FF 0%, #8B45FD 100%);
-	border-radius:10px 10px 10px 10px;
-}
-.feat-card-icon-pos{
-	position:absolute;
-	left:0px;
-	right:0px;
-	top:-25px;
-}
-.feat-card{
-	margin-bottom:80px;
-	padding:10px 10px 10px 10px;
-	border-radius:20px 20px 20px 20px;
+.hero-offset{
+	position:relative;
+	bottom:-px;
 }
 .img-style{
 	border-radius:0px 0px 0px 0px;
 }
-.img-15-style{
-	box-shadow:0px 0px 50px #4D1B77;
+.rounded-watch-grid-box{
+	border-style:_popUpItemAction:;
+	border-radius:16px 16px 16px 16px;
+}
+.carousel-iphone{
+	width:400px;
+}
+.small{
+	width:111px;
+}
+.iphone-carousel-bg{
+	background:linear-gradient(0deg, #010002 0%, #0C071F 100%);
+}
+.watch-grid-bg{
+	background:linear-gradient(180deg, #000000 0%, #1A102E 100%);
+}
+.ipad-slide-bg{
+	background:linear-gradient(0deg, #000000     0%, #180F2B 100%);
+}
+.ipad-silide-dark-bg{
+	background:linear-gradient(0deg, #000001 0%, #00060F 100%);
+}
+.ipad-silide-dark-bg-cont{
+	background-color:#000001;
+	border-style:_popUpItemAction:;
+}
+.img-mediacontrol-style{
+	box-shadow:0px 0px 10px #D24DFF;
+	border-color:#D337FF!important;
 	border-style:solid;
-	border-color:#A24AF9!important;
+	border-radius:40px 40px 40px 40px;
+	border-width:2px 2px 2px 2px;
+}
+.single-grid-ipad{
 	border-radius:25px 25px 25px 25px;
 }
-.img-16-style{
-	box-shadow:0px 2px 50px #501B7A;
-	border-color:#9A45FC!important;
+.img-main---pad-p-style{
+	box-shadow:0px 0px 17px #2F2598;
 	border-style:solid;
-	border-radius:23px 23px 23px 23px;
+	border-color:#3F32D3!important;
+	border-radius:30px 30px 30px 30px;
+	border-width:3px 3px 3px 3px;
 }
-.white-top-black-down{
-	background:linear-gradient(0deg, #000000 0%, #010817 100%);
+.img-bloc-3-style{
+	box-shadow:0px 0px 25px #A249F8;
+	border-style:solid;
+	border-color:#AF53FF!important;
+	border-radius:20px 20px 20px 20px;
+	border-width:3px 3px 3px 3px;
 }
-.last-download-button{
-	background:linear-gradient(90deg, #FE26FF 0%, #5800D3 84%);
-	margin:25px 25px 25px 25px;
-}
-.last-download-button:hover{
-	background:linear-gradient(0deg, #FE26FF 0%, #9549ff 84%);
+.pink-download-button{
+	background:linear-gradient(90deg, #FC26FF 3%, #5700D3 100%);
+	border-style:_popUpItemAction:;
+	border-color:transparent!important;
+	border-radius:50px 50px 50px 50px;
 }
 .btn-style{
 	font-weight:bold;
-	border-radius:39px 39px 39px 39px;
-	outline: none;
-	border:none;
-	transition: 0.3s ease-in-out;
-}
-.download-ios-app-button{
-	background:linear-gradient(180deg, #00B1FF 0%, #0052FE 100%);
-	margin:25px;
-
-}
-.macos-app-download-btn{
-	background:linear-gradient(180deg, #2B2B2B 0%, #1B1B1B 100%);
-	margin:25px;
 }
 
-.youtubedemo-btn{
-	background:linear-gradient(180deg, #FF0000 0%, #FF0000 100%);
-	margin:25px;
-}
-
-.support-btn{
-	background:linear-gradient(180deg, #008A12 0%, #1C4E00 100%);
-	margin:25px 25px 25px 25px;
-}
-
-.youtubedemo-btn:hover{
-	background:linear-gradient(90deg, #ff6139 0%, #ff2323 100%);
-	margin:25px;
-}
-
-.download-ios-app-button:hover{
-	background:linear-gradient(90deg, #00B1FF 0%, #5a8eff 100%);
-	margin:25px;
-}
-.support-btn:hover{
-	background:linear-gradient(90deg, #008A12 0%, #276900 100%);
-}
-
-.macos-app-download-btn:hover{
-	background:linear-gradient(90deg, #1B1B1B 0%, #525252 100%);
-}
-
-
-.img-main---pad-p-style{
-	box-shadow:0px 0px 29px #2F2687;
-	border-style:solid;
-	border-color:#2F2699!important;
-	border-radius:25px 25px 25px 25px;
-}
-.call-to-action-download-btn{
-	background:linear-gradient(90deg, #E975F3 0%, #7405FF 81%);
-}
-.call-to-action-download-btn:hover{
-	background:linear-gradient(0deg, #E975F3 0%, #9f50ff 81%);
-}
-.ios-heading-gradient{
-	font-weight:900;
-	color:#BA73F4!important;
-}
-.ios-details{
-	color:#D3CEF0!important;
-	font-weight:bold;
-}
-.app-icon-image{
-	border-style:solid;
-	border-radius:10px 10px 10px 10px;
-}
-.macos-text-body{
-	color:#B68FE5!important;
-}
-.link-style{
-	color: white;
-	text-decoration:none;
-	transition: 0.1s ease-in-out;
-}
-.link-style:hover{
-	text-decoration:underline;
-	color: rgb(255, 255, 255);
-}
 /* = Colour
 -------------------------------------------------------------- */
 
+/* Background colour styles */
+
+.bgc-black{
+	background-color:#000000;
+}
 
 /* Text colour styles */
 
 .tc-white{
-	color:rgba(255,255,255,0.8)!important;
-}
-.tc-white-2{
 	color:#FFFFFF!important;
 }
+.tc-white-2{
+	color:rgba(255,255,255,0.8)!important;
+}
 
-/* Bloc image backgrounds */
+/* Link colour styles */
+
+.ltc-white{
+	color:#FFFFFF!important;
+}
+.ltc-white:hover{
+	color:#cccccc!important;
+}
 
 
 
@@ -592,10 +662,6 @@ h3{
 	.app-hero-sub-title{
 		font-size:25px;
 	}
-	.mt-md-0{
-	}
-	.mt-md-4{
-	}
 	
 }
 
@@ -606,17 +672,12 @@ h3{
 	.app-hero-sub-title{
 		font-size:20px;
 	}
-	.feat-card{
-		margin-bottom:60px;
-	}
 	
 }
 
 @media (max-width: 575px){
 	.app-hero-title{
 		font-size:20px;
-	}
-	.mt-1{
 	}
 	.footer-link{
 		text-align:center;

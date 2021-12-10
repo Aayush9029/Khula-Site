@@ -1,10 +1,3 @@
-/*-----------------------------------------------------------------------------------
-	Khula Usage
-	About: A shiny new Blocs website.
-	Author: Aayush Pokharel
-	Version: 1.0
-	Built with Blocs
------------------------------------------------------------------------------------*/
 body{
 	margin:0;
 	padding:0;
@@ -20,7 +13,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Preloader */
 
-.page-preloader{position: fixed;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;animation-name: preloader-fade;animation-delay: 2s;animation-duration: 0.5s;animation-fill-mode: both;}
+.page-preloader{position: fixed;top: 0;bottom: 0;width: 100%;z-index:100000;background:#000000 url("../img/pageload-spinner.gif") no-repeat center center;animation-name: preloader-fade;animation-delay: 0.5s;animation-duration: 0.5s;animation-fill-mode: both;}
 .preloader-complete{animation-delay:0.1s;}
 @keyframes preloader-fade {0% {opacity: 1;visibility: visible;}100% {opacity: 0;visibility: hidden;}}
 
