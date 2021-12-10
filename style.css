@@ -862,6 +862,9 @@ a {
         padding-left: 0;
         padding-right: 0;
     }
+    .threed-machelper-bg {
+        display: none;
+    }
     .btn-dwn {
         display: none;
     }
