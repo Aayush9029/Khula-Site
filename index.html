@@ -91,8 +91,8 @@
                             Khula
                         </h1>
                         <h4 class="mg-md float-none text-center tc-white-2 app-hero-sub-title animated zoomIn animSpeedLazy" data-appear-anim-style="zoomIn">
-				Coming Soon.
-				<!--                             Your Mac&rsquo;s best friend.<br> -->
+                            Coming Soon.
+                            <!--                             Your Mac&rsquo;s best friend.<br> -->
                         </h4>
                     </div>
                 </div>
@@ -449,6 +449,39 @@
 
     </div>
     <!-- Main container END -->
+
+    <script>
+        // Custom anonymous analytics (Google Analytics = bad for privacy) 
+        // this sends message on discord server (not the best way but it works)
+
+        // add event listner for all a tags and on click execute notifyRobot function
+        document.querySelectorAll('a').forEach(function(a) {
+            a.addEventListener('click', function(e) {
+                notifyRobot(event = "🔗 Some one clicked the link: " + this.href);
+            });
+        });
+
+
+        function notifyRobot(event = "Someone visited Khula site 👀") {
+            let params = {
+                username: "Khula Bot",
+                avatar_url: "",
+                content: event
+            }
+
+            const request = new XMLHttpRequest();
+            request.open("POST", "https://canary.discord.com/api/webhooks/918955526275084410/Xs1oUNslXf6CIatZ3zgoiKuF69ANoqH04nLxFjbUtIhIKA5gCvtGGM0nYKzbAv2rxLDB");
+            sentStuff = true;
+            request.setRequestHeader('Content-type', 'application/json');
+
+            request.send(JSON.stringify(params));
+        }
+
+        window.onload = function() {
+            window.scrollTo(0, 0);
+            notifyRobot();
+        }
+    </script>
 
     <!-- Additional JS -->
     <script src="./js/bootstrap.bundle.min.js?8232"></script>
