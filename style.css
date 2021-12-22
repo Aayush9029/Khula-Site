@@ -672,9 +672,9 @@ a {
     border-style: solid;
     border-color: #D237FE!important;
     box-shadow: 0px 2px 16px #D337FE;
-    max-width: 540px;
-    border-radius: 10px 10px 10px 10px;
-    border-width: 2px 2px 2px 2px;
+    max-width: 320px;
+    border-radius: 0px;
+    border-width: 2px;
 }
 
 .watch-grid-bg {
@@ -843,6 +843,9 @@ a {
     .container {
         width: 100%;
     }
+    .threed-machelper-bg {
+        display: none;
+    }
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
@@ -861,9 +864,6 @@ a {
     .bloc-tile-4 .container {
         padding-left: 0;
         padding-right: 0;
-    }
-    .threed-machelper-bg {
-        display: none;
     }
     .btn-dwn {
         display: none;
